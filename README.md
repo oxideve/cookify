@@ -1,6 +1,8 @@
 
-![Logo](https://i.ibb.co/LPqMvNw/minecraft-title.png")
 
+<p align="center">
+  ![Logo](https://i.ibb.co/LPqMvNw/minecraft-title.png")
+</p>
 
 # Cookify 
 
