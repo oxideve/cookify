@@ -15,7 +15,8 @@ public class ModItems {
 
     public static final Item MUSH_PORCINI = registerItem("mush_porcini", new Item(new FabricItemSettings().food(ModFood.MUSH_PORCINI)));
 
-
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds", new Item(new FabricItemSettings()));
+    public static final Item ORANGE_SEEDS = registerItem("orange_seeds", new Item(new FabricItemSettings()));
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Cookify.MOD_ID, name), item);
     }

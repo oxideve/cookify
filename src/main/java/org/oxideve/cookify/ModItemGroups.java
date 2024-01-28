@@ -7,6 +7,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.oxideve.cookify.block.ModBlocks;
 import org.oxideve.cookify.item.ModItems;
 
 public class ModItemGroups {
@@ -28,11 +29,18 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.literal("Cookify. Machines"))
                     .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
 
-                        entries.add(ModItems.TOMATO);
-                        entries.add(ModItems.ORANGE);
-                        entries.add(ModItems.MUSH_POPLAR);
-                        entries.add(ModItems.MUSH_PORCINI);
+                        entries.add(ModBlocks.DESEEDER);
 
+
+                    }).build());
+
+    public static final ItemGroup COOKIFYMAC_SEEDS = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Cookify.MOD_ID, "cookifyseeds"),
+            FabricItemGroup.builder().displayName(Text.literal("Cookify. Seeds"))
+                    .icon(() -> new ItemStack(ModItems.TOMATO_SEEDS)).entries((displayContext, entries) -> {
+
+                        entries.add(ModItems.TOMATO_SEEDS);
+                        entries.add(ModItems.ORANGE_SEEDS);
 
                     }).build());
 
