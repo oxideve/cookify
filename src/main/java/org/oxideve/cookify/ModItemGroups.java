@@ -24,15 +24,15 @@ public class ModItemGroups {
 
                     }).build());
 
-    public static final ItemGroup COOKIFYMAC_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Cookify.MOD_ID, "cookifymachines"),
-            FabricItemGroup.builder().displayName(Text.literal("Cookify. Machines"))
-                    .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
-
-                        entries.add(ModBlocks.DESEEDER);
-
-
-                    }).build());
+//    public static final ItemGroup COOKIFYMAC_GROUP = Registry.register(Registries.ITEM_GROUP,
+//            new Identifier(Cookify.MOD_ID, "cookifymachines"),
+//            FabricItemGroup.builder().displayName(Text.literal("Cookify. Machines"))
+//                    .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
+//
+//
+//
+//
+//                    }).build());
 
     public static final ItemGroup COOKIFYMAC_SEEDS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Cookify.MOD_ID, "cookifyseeds"),
